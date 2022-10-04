@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Changer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              darkBg: "#044a5f",
+              lightBg: "#a1e6fb",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2051b3199e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="light" style="font-family: 'Montserrat', sans-serif">
+    <div id="container" class="flex flex-col gap-[20px]">
+      <h1 class="text-[200%]">Theme Changer</h1>
+      <p class="text-[140%] w-[40%] text-center">
+        Hello 😀 This is Aman, frontend web developer . I have built theme
+        changer, press below button to experience its both mode. Light and Dark.
+      </p>
+      <div class="flex space-x-2 justify-center">
+        <button
+          type="button"
+          class="text-[150%] bg-darkBg py-[5px] px-[15px] text-white rounded"
+        >
+          <!-- Light 🌞 -->
+          Dark 🌚
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
